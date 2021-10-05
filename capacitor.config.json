@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "museum_app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
