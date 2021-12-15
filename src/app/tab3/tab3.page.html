@@ -1,17 +1,166 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title> Feedback</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Feedback</ion-title>
     </ion-toolbar>
   </ion-header>
+  <form (submit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Enter Name</ion-label>
+      <ion-input clearInput value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Enter Email</ion-label>
+      <ion-input></ion-input
+    ></ion-item>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-item>
+      <ion-label>Gender</ion-label>
+      <ion-select placeholder="gender">
+        <ion-select-option>Female</ion-select-option>
+        <ion-select-option>Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <!-- <ion-item>
+      <button id="mobBtn">Enter Mobile No.</button>
+    </ion-item> -->
+    <p id="test">Please rate our services from a range of 3 to 1:</p>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label><h2>Hygeine</h2> </ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>3 (highest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>2 (average)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>1 (lowest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label><h2>Staff</h2> </ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>3 (highest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>2 (average)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>1 (lowest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label><h2>Collections</h2> </ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>3 (highest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>2 (average)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>1 (lowest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label><h2>Restrooms</h2> </ion-label>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>3 (highest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>2 (average)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>1 (lowest)</ion-label>
+          <ion-radio></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-item>
+      <ion-label position="stacked">We value your Feedback.</ion-label>
+      <ion-textarea disabled readonly value="Submit your feedback">
+      </ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Any Suggestions?</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+    <!-- <ion-item>
+    <ion-range color="danger" pin="true"></ion-range>
+  </ion-item> -->
+    <!-- <ion-label position="fixed"></ion-label> -->
+    <ion-text>Overall experience ratings:</ion-text>
+    <ion-item>
+      <ion-range min="1" max="10" color="secondary">
+        <ion-label slot="start">1</ion-label>
+        <ion-label slot="end">10</ion-label>
+      </ion-range>
+    </ion-item>
+    <h6>Check the things you liked in the Museum</h6>
+    <ion-list>
+      <ion-item id="checkBox">
+        <ion-label>History Section</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+
+      <ion-item id="checkBox">
+        <ion-label>Arts Section</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+
+      <ion-item id="checkBox">
+        <ion-label>Architecture Section</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    <ion-button class="round" type="submit" (click)="alert()"
+      >Submit</ion-button
+    >
+  </form>
+  <ion-button (click)="actionSheet()">Terms and Conditions</ion-button>
+
+  <!-- <app-explore-container name="Feedback"> </app-explore-container> -->
 </ion-content>

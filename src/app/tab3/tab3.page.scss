@@ -1,0 +1,40 @@
+ion-content {
+  border: 6px solid rgba(25, 184, 208, 0.2);
+}
+ion-item {
+  font-size: 14px;
+}
+h2 {
+  text-align: center;
+}
+#test {
+  background-color: inherit;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+ion-list {
+  border-top: 1px solid rgba(25, 184, 208, 0.2);
+  font-size: 12px;
+  height: 200px;
+}
+#checkBox {
+  // color: rgba(199, 111, 111, 0.1);
+  color: #d79d9d;
+  padding: 0;
+  font-size: 12px;
+  height: 42px;
+}
+.round {
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  --padding: 0;
+  --border-radius: 30px;
+}
+#mobBtn {
+  // color: red;
+  padding: 7px;
+  border-radius: 12px;
+}

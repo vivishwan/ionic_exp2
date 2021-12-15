@@ -1,17 +1,87 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title> Events Feed </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Events Feed</ion-title>
     </ion-toolbar>
   </ion-header>
+  <!-- <ion-button>Click</ion-button> -->
+  <ion-list>
+    <ion-item>
+      <ion-label>Magic Show Today</ion-label>
+      <ion-button (click)="showToast()">Interested</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Movie show</ion-label>
+      <ion-button (click)="showToast()">Interested</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Pet show</ion-label>
+      <ion-button (click)="showToast()">Interested</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>Game Night</ion-label>
+      <ion-button (click)="showToast()">Interested</ion-button>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-alert></ion-alert> -->
+  <ion-button (click)="showAlert()">Delete Interests</ion-button>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- <ion-card>
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile, and
+      climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card> -->
+  <h4>Artwork Collections info:</h4>
+  <ion-card>
+    <img
+      src="https://colourlex.com/wp-content/uploads/2020/06/Edvard-Munch-The-Scream.jpg.webp"
+    />
+    <ion-card-header>
+      <ion-card-subtitle>Art Gallery</ion-card-subtitle>
+      <ion-card-title>The Scream, by Edvard Munch</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Munch created two versions in paint and two in pastels, as well as a
+      lithograph stone from which several prints survive. Both of the painted
+      versions have been stolen, but since recovered.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img
+      src="https://www.researchgate.net/publication/335841640/figure/fig1/AS:803804446486530@1568653322217/Johannes-Vermeer-Girl-with-a-Pearl-Earring-c-1665-MH670-Mauritshuis-The-Hague.png"
+    />
+    <ion-card-header>
+      <ion-card-subtitle>Art Gallery</ion-card-subtitle>
+      <ion-card-title>Girl with a Pearl Earring</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      An oil painting by Dutch Golden Age painter Johannes Vermeer, dated c.
+      1665. Going by various names over the centuries, it became known by its
+      present title towards the end of the 20th century after the earring worn
+      by the girl portrayed there.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img
+      src="https://i.guim.co.uk/img/media/7b3bf07e33b452d91a7ac2fd208a2bd89992540a/0_0_3000_2670/master/3000.jpg?width=445&quality=45&auto=format&fit=max&dpr=2&s=d48918435deb4a670d5aafa9bcf68259"
+    />
+    <ion-card-header>
+      <ion-card-subtitle>Art Gallery</ion-card-subtitle>
+      <ion-card-title>Whistler’s Mother</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      A painting in oils on canvas created by the American-born painter James
+      McNeill Whistler in 1871. The subject of the painting is Whistler's
+      mother, Anna McNeill Whistler.
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <app-explore-container name="Gallery"></app-explore-container> -->
 </ion-content>
